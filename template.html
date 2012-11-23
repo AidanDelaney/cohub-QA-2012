@@ -9,13 +9,9 @@ URL: https://code.google.com/p/io-2012-slides
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Google IO 2012</title>
+  <title>CoHub 2012: Shipping Software with Fewer Defects</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <!--This one seems to work all the time, but really small on ipad-->
-  <!--<meta name="viewport" content="initial-scale=0.4">-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" media="all" href="theme/css/default.css">
   <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
@@ -28,12 +24,12 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide class="logoslide nobackground">
     <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo.png"></span>
+      <span><img src="images/UoBLogo.png"></span>
     </article>
   </slide>
 
   <slide class="title-slide segue nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
@@ -44,342 +40,619 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets</h2>
+      <h2>About Me</h2>
     </hgroup>
     <article>
       <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
+        <li>Academic with reasonable development experience.
           <ul>
-            <li>Subtitle capitalization is title case</li>
+            <li>Shipped software in Java, JavaScript, C, C++, Perl and Haskell.</li>
+            <li>Contributor to various open-source projects.</li>
           </ul>
         </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
+        <li>Contributor to literature on Software Engineering
+          <ul>
+            <li>My research area is on systems for formal spectification.</li>
+            <li>Regularly review cutting-edge papers on software engineering.</li>
+          </ul>
+        </li>
+        <li>Happy to expand on this talk with any local company.</li>
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>A list where items build:</p>
-      <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
-      </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide hidden>
-    Hidden slides are left out of the presentation.
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-// Say hello world until the user starts questioning
-// the meaningfulness of their existence.
-function helloWorld(world) {
-  for (var i = 42; --i &gt;= 0;) {
-    alert('Hello ' + String(world));
-  }
-}
-</pre>
-<pre class="prettyprint" data-lang="css">
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-&lt;/style&gt;
-</pre>
-<pre class="prettyprint" data-lang="html">
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>My Awesome Page&lt;/title>
-&lt;/head>
-&lt;body>
-  &lt;p&gt;Hello world&lt;/p&gt;
-&lt;body>
-&lt;/html>
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Slide with Speaker Notes</h2>
-    </hgroup>
-    <article>
-      <p>Press 'p' to toggle speaker notes.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Presenter Mode</h2>
-    </hgroup>
-    <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image</h2>
-    </hgroup>
-    <article>
-      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
+      <h2>Waterfall Development</h2>
     </hgroup>
     <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+      <img src="images/Waterfall.svg" alt="Steps in the waterfall model: Requirements Analysis, Design, Implentation, Testing and Maintenance" title="A Depiction of the Waterfall Model">
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Agilefall Development</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/Agilefall.svg" alt="Steps in the, so-called, Agilefall model" title="A Depiction of the Agilefall Model">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Focus of Talk</h2>
     </hgroup>
     <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
+      <ul>
+        <li>Set of tools &amp; techniques to bring "Quality Assurance" inside the <i>agile</i> part of Agilefall.</li>
+        <li>Code oriented tools.</li>
+        <li>Support, what I call, <i>Continuous QA</i>.</li>
+        <li>Also support management goals
+          <ul>
+            <li>ISO 9001</li>
+            <li>CMM Level 3</li>
+            <li>UK DDA</li>
+            <li>IEEE 829 (I don't go into this much in this talk)</li>
+          </ul>
+        </li>
+      </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Basic Techniques</h2>
+      <h3>Things you're probably already doing</h3>
     </hgroup>
     <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
+      <ul>
+        <li>Source Configuration Management</li>
+        <li>Unit Testing</li>
+        <li>Defect Tracking (topic not covered here)</li>
+        <li>Automated Building</li>
+      </ul>
+    </article>
+  </slide>
+
+<!--
+  <slide>
+    <hgroup>
+      <h2>The Product</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <ul>
+        <li>Web application in Java using Play Framework</li>
+      </ul>
+      <img src="images/Wireframe.svg" />
+    </article>
+  </slide>
+-->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Source Configuration Management</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>SCM Overview</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Acts as a "librarian" for source code.</li>
+        <li>Tracks changes between revisions.</li>
+        <li>Tracks reasons for changes between revisions.</li>
+        <li>Stores all revisions of all versions of product.</li>
+        <li>Allows Transparency (ISO 9001).</li>
+        <li>Allows Defect-Resolution Tracking (CMM).</li>
+      </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide Styles</h2>
+      <h2>SCM Tree of Mature(ish) Product</h2>
     </hgroup>
-    <article class="smaller">
+    <article class="vcentre">
+      <p>
+      <img src="images/SCMTree.svg" />
+      </p>
+      <div class="centred">
+      <ul>
+        <li>Separate internal builds from released builds.</li>
+        <li>Branching is important.</li>
+      </ul>
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>SCM Tools</h2>
+    </hgroup>
+    <article>
       <div class="columns-2">
+        <ul><li>Decentralised
         <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
+          <li>Git</li>
+          <li>Darcs</li>
+          <li>Bazaar</li>
+          <li>Mercurial</li>
         </ul>
+        </li></ul>
+
+        <ul><li>Centralised
         <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
+          <li>SVN</li>
+          <li>CVS</li>
         </ul>
+        </li></ul>
       </div>
       <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
+      <p>All of the above are open-source.  I see no point in trusting <i>our</i> product to a tool <i>we</i> don't, or can't, control.</p>
       </div>
+      </article>
+    </slide>
+
+  <slide>
+    <hgroup>
+      <h2>SCM Tip #1</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Using git</li>
+        <li>Master-Development-Topic branch structure
+           <div class="centred" style="margin-top:1em">
+             <img src="images/MasterDevelopmentTopic.svg" />
+           </div>
+        </li>
+      <li>Use microcommits</li>
+      <li>topic-> dev, use --no-ff</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>SCM Tip #2</h2>
+    </hgroup
+    <article>
+      <ul>
+        <li>Designers can, and do, use git.</li>
+        <li>Structure your project where "public" is the directory that stores the designers' assets
+<pre>
+Project/src
+       /public/images
+              /css
+              /templates
+</pre>
+</li>
+      <li>The contents of "public" can then be a git-submodule managed by <a href="http://sparkleshare.org/">SparkleShare</a> (demo time).</li>
+      </ul>
     </article>
   </slide>
 
   <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <aside class="gdbar right bottom"><img src="images/UoBStar.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Unit Testing</h2>
     </hgroup>
   </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
+  <slide>
     <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
+      <h2>Unit Testing Overview</h2>
     </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
-  </slide>
-
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/google_developers_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <q>
-        This is an example of quote text.
-      </q>
-      <div class="author">
-        Name<br>
-        Company
-      </div>
+    <article>
+      <ul>
+       <li>Class/method level white box testing.</li>
+       <li>Generally used to pass <i>precanned</i> data into methods and check against <i>precanned</i> outputs.</li>
+       <li>Advanced usage allows testing of invariant properties.</li>
+       <li>Allows building a regression test suite.</li>
+       <li>Allows Defect-Resolution tracking (CMM).</li>
+       <li>Supports the Continuous QA practice we wish to introduce.</li>
+       <li>I could write a book on software testing.</li>
+      </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Iframe</h2>
+      <h2>Unit Testing Tools</h2>
     </hgroup>
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/history.html"></iframe>
+      <ul>
+        <li>Necessarily tied to development language choice.</li>
+        <li>XUnit is the overarching name for a family of related unit testing tools
+          <ul>
+            <li>JUnit in Java</li>
+            <li>NUnit in .Net</li>
+            <li>CppUnit in C++</li>
+            <li>PyUnit in Python</li>
+            <li>...</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>JUnit Example</h2>
+    </hgroup>
+    <article>
+<pre class="prettyprint" data-lang="Java">
+public class AssertTests {
+    @Test
+    public void testAssertArrayEquals() {
+        byte[] expected = "trial".getBytes();
+        byte[] actual = "trial".getBytes();
+        org.junit.Assert.assertArrayEquals("failure - byte arrays not same",
+                                            expected, actual);
+    }
+
+    @Test
+    public void testAssertThathasItemsContainsString() {
+        org.junit.Assert.assertThat(Arrays.asList("one", "two", "three"),
+                                    hasItems("one", "three"));
+    }
+}
+</pre>
+<footer class="source">Code stolen from the <a href="https://github.com/kentbeck/junit/wiki">JUnit wiki</a></footer>
     </article>
   </slide>
 
   <slide>
+    <hgroup>
+      <h2>JUnit Tip #1</h2>
+    </hgroup>
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/history.html"></iframe>
+      <ul>
+        <li>Use JUnit to "fake" integration testing.</li>
+        <li>In integration testing we take a small number of related classes and test that they play well with each other.</li>
+        <li><a href="http://jmock.org/">JMock</a> can be used to stub out classes.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>JUnit Tip #2</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Investigate algebraic testing using <a href="http://www.jcheck.org/">JCheck</a>.</li>
+      </ul>
+<div class="centre">
+<pre class="prettyprint" data-lang="Java">
+class Player {
+  public String name; // assume setter/getter & default constructor
+}
+
+class CustomPlayerGen  implements Gen<Player> {
+  public Player arbitrary(Random
+}
+
+@RunWith(org.jcheck.runners.JCheckRunner.class)
+public class TestPlayer {
+    @Test
+    @Configuration(tests=100)
+    @Generator(klass=Player.class, generator=CustomPlayerGen.class)
+    public void testCompareTo(Player c1, Player c2) {
+      ...
+    }
+}
+</pre>
+</div>
+    </article>
+  </slide>
+
+<!--
+  <slide class="segue dark nobackground">
+    <aside class="gdbar left bottom"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Defect Tracking</h2>
+    </hgroup>
+  </slide>
+-->
+
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar left top"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Automated Building</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Automated Building Overview</h2>
+    </hgroup>
+    <article>
+      <ul>
+       <li>Provides an <i>executable</i> description of the build of your companies product.</li>
+       <li>This means that the build description is not sitting in a word-processor file, slowly getting out of date.</li>
+       <li>Decouples the build from any particular IDE.</li>
+       <li>Turns a fallible manual process into a repeatable process.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Automated Building Tools</h2>
+    </hgroup>
+    <article>
+      <ul>
+       <li>Ant/Maven - Java</li>
+       <li>NAnt - .Net</li>
+       <li>easy_install.py - Python</li>
+       <li>Autotools/SCons/Cmake - C/C++</li>
+       <li>Too many to list, see <a href="http://en.wikipedia.org/wiki/List_of_build_automation_software">Wikipedia's list</a></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Automated Building Example</h2>
+    </hgroup>
+    <article class="smaller">
+<pre class="prettyprint" data-lang="XML">
+&lt;project>
+    &lt;target name="clean">
+        &lt;delete dir="build"/>
+    &lt;/target>
+
+    &lt;target name="compile">
+        &lt;mkdir dir="build/classes"/>
+        &lt;javac srcdir="src" destdir="build/classes"/>
+    &lt;/target>
+
+    &lt;target name="jar">
+        &lt;jar destfile="build/jar/HelloWorld.jar" basedir="build/classes">
+            &lt;manifest>
+                &lt;attribute name="Main-Class" value="HelloWorld"/>
+            &lt;/manifest>
+        &lt;/jar>
+    &lt;/target>
+
+    &lt;target name="run">
+        &lt;java jar="build/jar/HelloWorld.jar" fork="true"/>
+    &lt;/target>
+
+    &lt;target name="test">
+        &lt;junit>
+          &lt;test name="my.test.TestCase"/>
+        &lt;/junit>
+    &lt;/target>
+&lt;/project>
+<pre>
+<footer class="source">Adapted from the <a href="http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html">Ant tutorial</a></footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Automated Building Tip #1</h2>
+      <h3>There is no #2</h3>
+    </hgroup>
+    <article>
+      <ul>
+       <li>Ensure your automated build produces an installable package for your target platform
+         <ul>
+           <li>MSI style -- <a href="http://antinstaller.sourceforge.net/">Ant Installer</a></li>
+           <li>RPM -- <a href="http://ant.apache.org/manual/Tasks/rpm.html">Ant RPM task</a></li>
+           <li>DMG -- 
+<pre class="prettyprint" data-lang="XML">
+&lt;exec executable="hdiutil">
+  &lt;arg line="create -srcfolder ${folder.containing.your.app} ${dist.dmg.file}"/>
+&lt;/exec>
+</pre>
+         </ul>
+       </li>
+       <li>Produces a regression tested installable at the end of every build.</li>
+      </ul>
+    <footer class="source">DMG hack from <a href="http://blogs.bytecode.com.au/glen/2006/11/21/creating-dmg-files-from-ant.html">Glen Smith's blog</a>.</footer>
+    </article>
+  </slide>
+
+  <slide>
+  <article>
+    Given the basic practices
+    <ul>
+      <li>Source Configuration Management,</li>
+      <li>Unit Testing,</li>
+      <li>Defect Tracking (which we skipped), and</li>
+      <li>Automated Building</li>
+    </ul>
+   we may integrate QA as part of our agile iterations.
+  </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar left bottom"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Automated System Testing</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Automated System Testing Overview</h2>
+    </hgroup>
+    <article>
+      <ul>
+       <li>System tests (in this case) are those which drive the entire system.</li>
+       <li>By contrast unit tests probe individual components, and integration tests probe collections of components.</li>
+       <li>System testing often includes load testing.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Automated System Testing Example</h2>
+    </hgroup>
+    <article>
+<pre class="prettyprint" data-lang="Java">
+WebDriver drv = new FirefoxDriver();
+drv.get("http://www.brighton.ac.uk");
+WebElement element = driver.findElement(By.name("sw"));
+element.sendKeys("foo");
+element.submit();
+drv.quit();
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Automated System Testing Tip #1</h2>
+    </hgroup>
+    <article>
+      <ul>
+       <li>Construct user workflow through the app/site.</li>
+       <li>You can use Selenium as a proxy user.</li>
+       <li>This both documents your application workflow and,</li>
+       <li>as a regression test, ensures that developers don't break established workflow.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Automated System Testing Tip #2</h2>
+    </hgroup>
+    <article>
+      <ul>
+       <li>Force your automated system testing tools to only use a11y hooks.</li>
+       <li>This ensures that your application workflow is usable by those who require a11y supprt.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar right bottom"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Continuous Integration &amp; QA</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Continuous Integration Overview</h2>
+    </hgroup>
+    <article>
+      <ul>
+       <li>I'll explain this on the whiteboard.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Continuous Integration Tools</h2>
+    </hgroup>
+    <article>
+      <ul>
+       <li>CruiseControl/Jenkins - Java</li>
+       <li>CruiseControl.Net - .Net</li>
+       <li>Buildbot - agnostic</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Continuous Integration Tip #1</h2>
+    </hgroup>
+    <article>
+      <ul>
+       <li>Use CI to do hard work.</li>
+       <li>Assume you have 3 developers.  Each, by the master-development-topic branch structure, will have one development branch.</li>
+       <li>Use CI to automagically merge and build all development branches.</li>
+       <li>Provides an early-smoke test as to when work is diverging.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Continuous Quality Assurance</h2>
+    </hgroup>
+    <article>
+We are now in the position where
+      <ul>
+       <li>we merge all developers' "development" branch and build,</li>
+       <li>then run regression test suite,</li>
+       <li>system test suite,</li>
+       <li>ensure that we correctly support a11y dependant users, and</li>
+       <li>produce an package that is installable on the target system.</li>
+       <li>Furthermore, all this happens automatically on a cheap machine that is otherwise gathering dust.</li>
+       <li>We are using hardware to do expensive work, for free!</li>
+      </ul>
+This gives us reasonable confidence in the quality of the product that we are producing.  I call this <i>Continuous Quality Assurance</i>.
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar right top"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Conclusion</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Further Topics</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Integrating metrics into Continuous QA builds using <a href="http://www.sonarsource.org/">Sonar</a>.
+        <ul>
+          <li>Metrics are a double-edged shotgun i.e. take care!</li>
+        </ul>
+        </li>
+        <li>Automated user manual construction using <a href="http://seleniumhq.org/">Selenium</a>.
+        <ul>
+          <li>Use a markup/markdown in comments of "system tests".</li>
+        </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Conclusion</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Processes &amp; tools can be integrated which support both software development and QA.</li>
+        <li>This is a win-win situation.</li>
+        <li>The same processes, used wisely, also support management goals vis-a-vis
+        <ul>
+          <li>ISO 9001</li>
+          <li>IEEE 829</li>
+          <li>UK DDA</li>
+          <li>CMM (level 3 or level 4).</li>
+        </ul>
+        </li>
+        <li>Pulling QA into the "agile" development cycle can increase code quality, thus fewer defects, producing happier customers.</li>
+      </ul>
     </article>
   </slide>
 
   <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+    <aside class="gdbar right"><img src="images/UoBStar.png"></aside>
     <article class="flexbox vleft auto-fadein">
-      <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
+      <h2>Aidan Delaney</h2>
+      <p><a href="mailto:a.j.delaney@brighton.ac.uk" style="color:white;">&lt;a.j.delaney@brighton.ac.uk&gt;</a></p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
@@ -388,29 +661,12 @@ function helloWorld(world) {
 
   <slide class="logoslide dark nobackground">
     <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo_white.png"></span>
+      <span><img src="images/UoBLogo.png"></span>
     </article>
   </slide>
 
   <slide class="backdrop"></slide>
 
 </slides>
-
-<script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
-
-<!--[if IE]>
-  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
-  <script>CFInstall.check({mode: 'overlay'});</script>
-<![endif]-->
 </body>
 </html>
