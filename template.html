@@ -323,7 +323,7 @@ public class AssertTests {
     <hgroup>
       <h2>JUnit Tip #2</h2>
     </hgroup>
-    <article>
+    <article class="smaller">
       <ul>
         <li>Investigate algebraic testing using <a href="http://www.jcheck.org/">JCheck</a>.</li>
       </ul>
@@ -334,7 +334,10 @@ class Player {
 }
 
 class CustomPlayerGen  implements Gen<Player> {
-  public Player arbitrary(Random
+  public Player arbitrary(Random r, long s) {
+    StringGen sg = new StringGen();
+    return new Player(sg.arbitrary(r, s));
+  }
 }
 
 @RunWith(org.jcheck.runners.JCheckRunner.class)
@@ -387,13 +390,14 @@ public class TestPlayer {
       <h2>Automated Building Tools</h2>
     </hgroup>
     <article>
-      <ul>
-       <li>Ant/Maven - Java</li>
-       <li>NAnt - .Net</li>
-       <li>easy_install.py - Python</li>
-       <li>Autotools/SCons/Cmake - C/C++</li>
-       <li>Too many to list, see <a href="http://en.wikipedia.org/wiki/List_of_build_automation_software">Wikipedia's list</a></li>
-      </ul>
+      <table>
+	<tr><th>Tool</th><th>Technology</th></tr>
+	<tr><td>Ant/Maven</td><td>Java</td></tr>
+	<tr><td>NAnt</td><td>.Net</td></tr>
+	<tr><td>easy_install.py</td><td>Python</td></tr>
+	<tr><td>Autotools/SCons/Cmake</td><td>C/C++</td></tr>
+      </table>
+      Too many to list, see <a href="http://en.wikipedia.org/wiki/List_of_build_automation_software">Wikipedia's list</a>
     </article>
   </slide>
 
@@ -490,6 +494,8 @@ public class TestPlayer {
        <li>System tests (in this case) are those which drive the entire system.</li>
        <li>By contrast unit tests probe individual components, and integration tests probe collections of components.</li>
        <li>System testing often includes load testing.</li>
+       <li>We'll look at a simple example of system testing by driving the GUI</li>
+       <li>Supports CMM (level 2/level 3)</li>
       </ul>
     </article>
   </slide>
@@ -532,6 +538,7 @@ drv.quit();
       <ul>
        <li>Force your automated system testing tools to only use a11y hooks.</li>
        <li>This ensures that your application workflow is usable by those who require a11y supprt.</li>
+       <li>Demo: quick look at Dogtail.</li>
       </ul>
     </article>
   </slide>
@@ -549,6 +556,12 @@ drv.quit();
     </hgroup>
     <article>
       <ul>
+       <li>This is where we put SCM, testing, building (and defect tracking) together</li>
+       <li>By doing this, we can use a computer to do tasks that your developers are bad at
+	 <ul>
+	   <li>Offload things that computers are good at to a £300 machine, keep <i>creative</i> human things for the £30,000 programmer.</li>
+	 </ul>
+	</li>
        <li>I'll explain this on the whiteboard.</li>
       </ul>
     </article>
@@ -559,11 +572,12 @@ drv.quit();
       <h2>Continuous Integration Tools</h2>
     </hgroup>
     <article>
-      <ul>
-       <li>CruiseControl/Jenkins - Java</li>
-       <li>CruiseControl.Net - .Net</li>
-       <li>Buildbot - agnostic</li>
-      </ul>
+      <table>
+	<tr><th>Tool</th><th>Technology</th></tr>
+	<tr><td>CruiseControl/Jenkins</td><td>Java</td></tr>
+        <tr><td>CruiseControl.Net</td><td>.Net</td></tr>
+        <tr><td>Buildbot</td><td>agnostic</td></tr>
+      </table>
     </article>
   </slide>
 
